@@ -52,7 +52,7 @@ mongoose.connect('mongodb://localhost:27018/datossensor', (err, res)=>{
 const run = async () => {
     await mongoose.connect(process.env.URL_BASEDATOS, 
         { useNewUrlParser: true, useUnifiedTopology: true })
-    await app.listen(process.env.PUERTO)
+    await app.listen(process.env.PORT)
     console.log('Servidor y base de datos encendidos correctamente')
 }
 
